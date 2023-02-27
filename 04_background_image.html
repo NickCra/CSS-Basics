@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Image</title>
+  <style>
+    /* Background for Element */
+    p {
+      background-image: url('image.jpg');
+    }
+
+    /* Repeat Horizontally or Vertically */
+    body {
+      background-image: url('image');
+      background-repeat: repeat-x;
+      /* background-repeat: repeat-y; */
+    }
+
+    /* No Repeat */
+    body {
+      background-image: url('image.png');
+      background-repeat: no-repeat;
+    }
+
+    /* Position */
+    body {
+      backgound-color:#ffffff;
+      background-image: url('image.jpg');
+      background-repeat: no-repeat;
+      background-position: right top;
+    }
+
+    /* Attachment */
+    body {
+      background-image: url('image.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: right top;
+      /* background-attachment: scroll; */
+    }
+
+    /* Shorthand */
+    body {
+      background: #ffffff url('image.jpg') no-repeat fixed right top;
+    }
+
+</style>
+</head>
+<body>
+  
+</body>
+</html>

@@ -6,6 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Links</title>
   <style>
+     /* Buttons */
+     a.button:link, a:visited {
+      background-color: #f44336;
+      color: white;
+      padding: 14px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    a.button:hover, a:active {
+      background-color: red;
+    }
+
     /* Unvisited Link */
     a:link {
       color: red;
@@ -19,6 +33,7 @@
     /* Mouse Over Link */
     a:hover {
       color: hotpink;
+      cursor: pointer;
     }
 
     /* Selected Link */
@@ -43,11 +58,16 @@
       text-decoration: none;
     }
 
-    
+   
+
   </style>
 </head>
 <body>
-  <h1>Styling Links</h1>
+  <h2>Styling Links</h2>
   <a href="https://www.google.com">This is a Link to Google.com</a>
+
+  <h2>Styling Button Links</h2>
+  <p>A link styled as a button:</p>
+  <a class="button" href="default.asp" target="_blank">This is a link</a>
 </body>
 </html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Model</title>
+  <style>
+    /* Box Model */
+    div.one {
+      background-color: lightgrey;
+      width: 300px;
+      border: 15px solid green;
+      padding: 50px;
+      margin: 20px;
+    }
+
+    /* Width and Height */
+    div.two {
+      width: 320px;
+      padding: 10px;
+      border: 5px solid gray;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="one">This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum quisquam voluptatem eligendi corrupti esse? Sit laboriosam qui laborum nam in hic at aliquid vero assumenda, eius nobis quo magni, dolores aperiam eum dolore eligendi iste voluptate repellendus animi rerum maxime ullam quod? Corrupti saepe ipsum atque dignissimos ab vero accusamus.</div>
+
+  <br><hr><br>
+
+  <div class="two">The total width of this element is 350px. Total = width: 320px + padding: 10px (left + right) + border: 5px (left + right) + margin: 0px (left + right).<br><br>The total width of an element should be calculated like this: Total element width = <br>width + left padding + right padding + left border + right border + left margin + right margin<br><br>The total height of an element should be calculated like this: Total element height =<br>height + top padding + bottom padding + top border + bottom border + top margin + bottom margin</div>
+
+  <br><hr><br>
+</body>
+</html>

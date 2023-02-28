@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lists</title>
+  <style>
+
+  /* List Item Markers */
+  ul.a {
+    list-style-type: circle;
+  }
+  
+  ul.b {
+    list-style-type: square;
+  }
+  
+  ol.c {
+    list-style-type: upper-roman;
+  }
+  
+  ol.d {
+    list-style-type: lower-alpha;
+  }
+
+  /* List Item Markers Image */
+  ul.image {
+    list-style-image: url('image.gif');
+  }
+
+  /* List Item Markers Position */
+  ul.pos1 {
+    list-style-position: outside;
+  }
+
+  ul.pos2 {
+    list-style-position: inside;
+  }
+
+  /* Remove Default Settings */
+  ul.none {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Shorthand Property */
+  ul.short {
+    list-style: square inside url("image.gif");
+  }
+
+  /* List Colors */
+  ol {
+    background: #ff9999;
+    padding: 20px;
+  }
+
+  ul {
+    background: #3399ff;
+    padding: 20px;
+  }
+
+  ol li {
+    background: #ffe5e5;
+    color: darkred;
+    padding: 5px;
+    margin-left: 35px;
+  }
+
+  ul li {
+    background: #cce5ff;
+    color: darkblue;
+    margin: 5px;
+  }
+  </style>
+</head>
+<body>
+  <ul class="a">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+  </ul>
+  
+  <ul class="b">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+  </ul>
+  
+  <ol class="c">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+  </ol>
+  
+  <ol class="d">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+  </ol>
+
+  <hr>
+
+  <ul class="pos1">
+    <li>Coffee - A brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant</li>
+    <li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub (bush) native to Asia</li>
+    <li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
+  </ul>
+  
+  <ul class="pos2">
+    <li>Coffee - A brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant</li>
+    <li>Tea - An aromatic beverage commonly prepared by pouring hot or boiling water over cured leaves of the Camellia sinensis, an evergreen shrub (bush) native to Asia</li>
+    <li>Coca Cola - A carbonated soft drink produced by The Coca-Cola Company. The drink's name refers to two of its original ingredients, which were kola nuts (a source of caffeine) and coca leaves</li>
+  </ul>
+  
+  
+</body>
+</html>

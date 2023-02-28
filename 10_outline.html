@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outline</title>
+  <style>
+    /* Outline Color */
+    p {outline-color:red;}
+
+    /* Outline Style */
+    p.dotted {outline-style: dotted;}
+    p.dashed {outline-style: dashed;}
+    p.solid {outline-style: solid;}
+    p.double {outline-style: double;}
+    p.groove {outline-style: groove;}
+    p.ridge {outline-style: ridge;}
+    p.inset {outline-style: inset;}
+    p.outset {outline-style: outset;}
+
+    /* Outline Width */
+    p.ex1 {
+      border: 1px solid black;
+      outline-style: solid;
+      outline-color: red;
+      outline-width: thin;
+    }
+
+    p.ex2 {
+      border: 1px solid black;
+      outline-style: solid;
+      outline-color: red;
+      outline-width: medium;
+    }
+
+    p.ex3 {
+      border: 1px solid black;
+      outline-style: solid;
+      outline-color: red;
+      outline-width: thick;
+    }
+
+    p.ex4 {
+      border: 1px solid black;
+      outline-style: solid;
+      outline-color: red;
+      outline-width: 4px;
+    }
+
+    /* Shorthand */
+    p.ex5 {outline: dashed;}
+    p.ex6 {outline: dotted red;}
+    p.ex7 {outline: 5px solid green;}
+
+    /* Outline Offset */
+    p.ex8 {
+      margin: 30px;
+      border: 1px solid black;
+      outline: 1px solid red;
+      outline-offset: 15px;
+    }
+  </style>
+</head>
+<body>
+  <p class="dotted">A dotted outline</p>
+  <p class="dashed">A dashed outline</p>
+  <p class="solid">A solid outline</p>
+  <p class="double">A double outline</p>
+  <p class="groove">A groove outline. The effect depends on the outline-color value.</p>
+  <p class="ridge">A ridge outline. The effect depends on the outline-color value.</p>
+  <p class="inset">An inset outline. The effect depends on the outline-color value.</p>
+  <p class="outset">An outset outline. The effect depends on the outline-color value.</p>
+
+  <br><hr><br>
+
+  <p class="ex1">A thin outline.</p>
+  <p class="ex2">A medium outline.</p>
+  <p class="ex3">A thick outline.</p>
+  <p class="ex4">A 4px thick outline.</p>
+
+  <br><hr><br>
+
+  <p class="ex5">A dashed outline.</p>
+  <p class="ex6">A dotted red outline.</p>
+  <p class="ex7">A 5px solid green outline.</p>
+
+  <br><hr><br>
+
+  <p class="ex8">This paragraph has an outline 15px outside the border edge.</p>
+
+  <br>
+
+</body>
+</html>

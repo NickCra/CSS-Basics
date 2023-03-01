@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position</title>
+  <style>
+    /* Static */
+    div.static {
+      position: static;
+      left: 30px; /* Has no effect */
+      border: 3px solid green;
+    }
+
+    /* Relative */
+    div.relative1 {
+      position: relative;
+      left: 30px;
+      border: 3px solid green;
+    }
+
+    /* Fixed */
+    div.fixed {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 300px;
+      border: 3px solid green;
+    }
+
+  </style>
+</head>
+<body>
+  <br><br>
+
+  <div class="static">This element has position: static;</div>
+
+  <br><br>
+
+  <div class="relative1">This element has position: relative;</div>
+
+  <br><br>
+
+  <div class="fixed">This div element has position: fixed;</div>
+  
+</body>
+</html>

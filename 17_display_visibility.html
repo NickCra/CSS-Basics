@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display & Visibility</title>
+</head>
+<body>
+  <style>
+  /* Override Default Display Value */
+  li {
+    display: inline;
+  }
+  span {
+    display: block;
+  }
+
+  /* Hide Element */
+  h1.hidden1 {
+    display: none;
+  }
+
+  h1.hidden2 {
+    visibility: hidden;
+  }
+  </style>
+</body>
+  <h2>Horizontal Menu List</h2>
+  <ul>
+    <li><a href="#" target="_blank">News</a></li>
+    <li><a href="#" target="_blank"> About</a></li>
+    <li><a href="#" target="_blank"> Contact</a></li>
+  </ul>
+
+  <br>
+
+  <h2>Span as block element</h2>
+  <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <span></span> Cupiditate, numquam enim assumenda harum quidem aperiam, pariatur, neque corporis libero dolor exercitationem fugit eos vero iusto. Voluptate architecto quaerat sunt dolore. <span></span>Illum, nostrum blanditiis id laborum unde minus perspiciatis iure eligendi? Provident exercitationem obcaecati molestiae quibusdam nesciunt suscipit magnam itaque saepe?</span>
+
+  <br>
+
+  <h1>This is a visible heading</h1>
+  <h1 class="hidden1">This is a hidden heading</h1>
+  <p>The h1 element with display: none; doesn't take up any space.</p>
+
+  <br>
+
+  <h1>This is a visible heading</h1>
+  <h1 class="hidden2">This is a hidden heading</h1>
+  <p>The h1 element with visibility: hidden; still takes up space.</p>
+
+  <br>
+
+  
+</html>

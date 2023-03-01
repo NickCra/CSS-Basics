@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Borders</title>
+  <style>
+    /* Table Borders */
+    table.ex1, th.ex1, td.ex1 {
+      border: 1px solid;
+    }
+
+    /* Full Width Table */
+    table.ex2, th.ex2, td.ex2 {
+      border: 1px solid;
+    }
+
+    table.ex2 {
+      width: 100%;
+    }
+
+    /* Collapse Table Borders */
+    table.ex3, td.ex3, th.ex3 {
+      border: 1px solid;
+    }
+
+    table.ex3 {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    /* Border Around Table */
+    table.ex3 {
+      width: 100%;
+      border: 1px solid;
+    }
+
+    /* Width and Height */
+    table.ex4, td.ex4, th.ex4 {
+      border: 1px solid black;
+    }
+
+    table.ex4 {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th.ex4 {
+      height: 70px;
+    }
+
+    /* Horizontal Alignment */
+    table.ex5, td.ex5, th.ex5 {
+      border: 1px solid black;
+    }
+
+    table.ex5 {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td.ex5 {
+      text-align: center;
+    }
+
+    /* Vertical Alignment */
+    table.ex6, td.ex6, th.ex6 {
+      border: 1px solid black;
+    }
+
+    table.ex6 {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td.ex6 {
+      height: 50px;
+      vertical-align: bottom;
+    }
+
+    /* Table Padding */
+    table.ex7, td.ex7, th.ex7 {  
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    table.ex7 {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th.ex7, td.ex7 {
+      padding: 15px;
+    }
+
+    /* Horizontal Dividers */
+    table.ex8 {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th.ex8, td.ex8 {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+
+    /* Striped Tables */
+    table.ex9 {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th.ex9, td.ex9 {
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr.ex9:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    /* Table Color */
+    table.ex10 {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th.ex10, td.ex10 {
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr.ex10:nth-child(even){background-color: #f2f2f2}
+
+    th.ex10 {
+      background-color: #04AA6D;
+      color: white;
+    }
+
+    /* Responsive Table */
+    table.ex11 {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th.ex11, td.ex11 {
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr.ex11:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    div {
+      overflow-x: auto;
+    }
+
+  </style>
+</head>
+<body>
+  <table class="ex1">
+    <tr>
+      <th class="ex1">Firstname</th>
+      <th class="ex1">Lastname</th>
+    </tr>
+    <tr>
+      <td class="ex1">Peter</td>
+      <td class="ex1">Griffin</td>
+    </tr>
+    <tr>
+      <td class="ex1">Lois</td>
+      <td class="ex1">Griffin</td>
+    </tr>
+  </table>
+
+  <br><br>
+
+  <table class="ex2">
+    <tr>
+      <th class="ex2">Firstname</th>
+      <th class="ex2">Lastname</th>
+    </tr>
+    <tr>
+      <td class="ex2">Peter</td>
+      <td class="ex2">Griffin</td>
+    </tr>
+    <tr>
+      <td class="ex2">Lois</td>
+      <td class="ex2">Griffin</td>
+    </tr>
+  </table>
+
+  <br><br>
+
+  <table class="ex3">
+    <tr>
+      <th class="ex3">Firstname</th>
+      <th class="ex3">Lastname</th>
+    </tr>
+    <tr>
+      <td class="ex3">Peter</td>
+      <td class="ex3">Griffin</td>
+    </tr>
+    <tr>
+      <td class="ex3">Lois</td>
+      <td class="ex3">Griffin</td>
+    </tr>
+  </table>
+
+  <br><br>
+
+  <table class="ex3">
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+    </tr>
+    <tr>
+      <td>Peter</td>
+      <td>Griffin</td>
+    </tr>
+    <tr>
+      <td>Lois</td>
+      <td>Griffin</td>
+    </tr>
+  </table>
+
+  <br><br>
+
+  <table class="ex4">
+    <tr>
+      <th class="ex4">Firstname</th>
+      <th class="ex4">Lastname</th>
+      <th class="ex4">Savings</th>
+    </tr>
+    <tr>
+      <td class="ex4">Peter</td>
+      <td class="ex4">Griffin</td>
+      <td class="ex4">$100</td>
+    </tr>
+    <tr>
+      <td class="ex4">Lois</td>
+      <td class="ex4">Griffin</td>
+      <td class="ex4">$150</td>
+    </tr>
+    <tr>
+      <td class="ex4">Joe</td>
+      <td class="ex4">Swanson</td>
+      <td class="ex4">$300</td>
+    </tr>
+    <tr>
+      <td class="ex4">Cleveland</td>
+      <td class="ex4">Brown</td>
+      <td class="ex4">$250</td>
+    </tr>
+  </table>
+
+  <br><br>
+
+  <table class="ex5">
+    <tr>
+      <th class="ex5">Firstname</th>
+      <th class="ex5">Lastname</th>
+      <th class="ex5">Savings</th>
+    </tr>
+    <tr>
+      <td class="ex5">Peter</td>
+      <td class="ex5">Griffin</td>
+      <td class="ex5">$100</td>
+    </tr>
+    <tr>
+      <td class="ex5">Lois</td>
+      <td class="ex5">Griffin</td>
+      <td class="ex5">$150</td>
+    </tr>
+    <tr>
+      <td class="ex5">Joe</td>
+      <td class="ex5">Swanson</td>
+      <td class="ex5">$300</td>
+    </tr>
+    <tr>
+      <td class="ex5">Cleveland</td>
+      <td class="ex5">Brown</td>
+      <td class="ex5">$250</td>
+    </tr>
+  </table>
+
+  <br><br>
+
+  <table class="ex6">
+    <tr>
+      <th class="ex6">Firstname</th>
+      <th class="ex6">Lastname</th>
+      <th class="ex6">Savings</th>
+    </tr>
+    <tr>
+      <td class="ex6">Peter</td>
+      <td class="ex6">Griffin</td>
+      <td class="ex6">$100</td>
+    </tr>
+    <tr>
+      <td class="ex6">Lois</td>
+      <td class="ex6">Griffin</td>
+      <td class="ex6">$150</td>
+    </tr>
+    <tr>
+      <td class="ex6">Joe</td>
+      <td class="ex6">Swanson</td>
+      <td class="ex6">$300</td>
+    </tr>
+    <tr>
+      <td class="ex6">Cleveland</td>
+      <td class="ex6">Brown</td>
+      <td class="ex6">$250</td>
+    </tr>
+  </table>
+
+  <br><br>
+
+  <table class="ex7">
+    <tr>
+      <th class="ex7">Firstname</th>
+      <th class="ex7">Lastname</th>
+      <th class="ex7">Savings</th>
+    </tr>
+    <tr>
+      <td class="ex7">Peter</td>
+      <td class="ex7">Griffin</td>
+      <td class="ex7">$100</td>
+    </tr>
+    <tr>
+      <td class="ex7">Lois</td>
+      <td class="ex7">Griffin</td>
+      <td class="ex7">$150</td>
+    </tr>
+    <tr>
+      <td class="ex7">Joe</td>
+      <td class="ex7">Swanson</td>
+      <td class="ex7">$300</td>
+    </tr>
+    <tr>
+      <td class="ex7">Cleveland</td>
+      <td class="ex7">Brown</td>
+      <td class="ex7">$250</td>
+    </tr>
+  </table>
+
+  <br><br>
+
+  <table class="ex8">
+    <tr>
+      <th class="ex8">Firstname</th>
+      <th class="ex8">Lastname</th>
+      <th class="ex8">Savings</th>
+    </tr>
+    <tr>
+      <td class="ex8">Peter</td>
+      <td class="ex8">Griffin</td>
+      <td class="ex8">$100</td>
+    </tr>
+    <tr>
+      <td class="ex8">Lois</td>
+      <td class="ex8">Griffin</td>
+      <td class="ex8">$150</td>
+    </tr>
+    <tr>
+      <td class="ex8">Joe</td>
+      <td class="ex8">Swanson</td>
+      <td class="ex8">$300</td>
+    </tr>
+    <tr>
+      <td class="ex8">Cleveland</td>
+      <td class="ex8">Brown</td>
+      <td class="ex8">$250</td>
+    </tr>
+  </table>
+  
+  <br><br>
+
+  <table class="ex9">
+    <tr class="ex9">
+      <th class="ex9">First Name</th>
+      <th class="ex9">Last Name</th>
+      <th class="ex9">Points</th>
+    </tr>
+    <tr class="ex9">
+      <td class="ex9">Peter</td>
+      <td class="ex9">Griffin</td>
+      <td class="ex9">$100</td>
+    </tr>
+    <tr class="ex9">
+      <td class="ex9">Lois</td>
+      <td class="ex9">Griffin</td>
+      <td class="ex9">$150</td>
+    </tr>
+    <tr class="ex9">
+      <td class="ex9">Joe</td>
+      <td class="ex9">Swanson</td>
+      <td class="ex9">$300</td>
+    </tr>
+    <tr class="ex9">
+      <td class="ex9">Cleveland</td>
+      <td class="ex9">Brown</td>
+      <td class="ex9">$250</td>
+    </tr>
+  </table>
+
+  <br><br>
+
+  <table class="ex10">
+    <tr class="ex10">
+      <th class="ex10">Firstname</th>
+      <th class="ex10">Lastname</th>
+      <th class="ex10">Savings</th>
+    </tr>
+    <tr class="ex10">
+      <td class="ex10">Peter</td>
+      <td class="ex10">Griffin</td>
+      <td class="ex10">$100</td>
+    </tr>
+    <tr class="ex10">
+      <td class="ex10">Lois</td>
+      <td class="ex10">Griffin</td>
+      <td class="ex10">$150</td>
+    </tr>
+    <tr class="ex10">
+      <td class="ex10">Joe</td>
+      <td class="ex10">Swanson</td>
+      <td class="ex10">$300</td>
+    </tr>
+    <tr class="ex10">
+      <td class="ex10">Cleveland</td>
+      <td class="ex10">Brown</td>
+      <td class="ex10">$250</td>
+    </tr>
+  </table>
+
+  <br><br>
+
+  <div>
+    <table class="ex11">
+      <tr class="ex11">
+        <th class="ex11">First Name</th>
+        <th class="ex11">Last Name</th>
+        <th class="ex11">Points</th>
+        <th class="ex11">Points</th>
+        <th class="ex11">Points</th>
+        <th class="ex11">Points</th>
+        <th class="ex11">Points</th>
+        <th class="ex11">Points</th>
+        <th class="ex11">Points</th>
+        <th class="ex11">Points</th>
+        <th class="ex11">Points</th>
+        <th class="ex11">Points</th>
+      </tr>
+      <tr class="ex11">
+        <td class="ex11">Jill</td>
+        <td class="ex11">Smith</td>
+        <td class="ex11">50</td>
+        <td class="ex11">50</td>
+        <td class="ex11">50</td>
+        <td class="ex11">50</td>
+        <td class="ex11">50</td>
+        <td class="ex11">50</td>
+        <td class="ex11">50</td>
+        <td class="ex11">50</td>
+        <td class="ex11">50</td>
+        <td class="ex11">50</td>
+      </tr>
+      <tr class="ex11">
+        <td class="ex11">Eve</td>
+        <td class="ex11">Jackson</td>
+        <td class="ex11">94</td>
+        <td class="ex11">94</td>
+        <td class="ex11">94</td>
+        <td class="ex11">94</td>
+        <td class="ex11">94</td>
+        <td class="ex11">94</td>
+        <td class="ex11">94</td>
+        <td class="ex11">94</td>
+        <td class="ex11">94</td>
+        <td class="ex11">94</td>
+      </tr>
+      <tr class="ex11">
+        <td class="ex11">Adam</td>
+        <td class="ex11">Johnson</td>
+        <td class="ex11">67</td>
+        <td class="ex11">67</td>
+        <td class="ex11">67</td>
+        <td class="ex11">67</td>
+        <td class="ex11">67</td>
+        <td class="ex11">67</td>
+        <td class="ex11">67</td>
+        <td class="ex11">67</td>
+        <td class="ex11">67</td>
+        <td class="ex11">67</td>
+      </tr>
+    </table>
+  </div>
+
+<br><br>
+
+</body>
+</html>

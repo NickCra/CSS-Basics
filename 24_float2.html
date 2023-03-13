@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float 2</title>
+  <style>
+    /* Grid of Boxes / Equal Width Boxes*/
+    * {
+      box-sizing: border-box;
+    }
+
+    .box {
+      float: left;
+      width: 33,33%;
+      padding: 50px;
+    }
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    /* Navigation Menu */
+    ul {
+      list-style-type: none;
+      margin: 0px;
+      padding: 0px;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: black;
+    }
+
+    .active {
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <h2>Grid of Boxes</h2>
+  <div class="clearfix">
+    <div class="box" style="background-color:#bbb">
+    <p>Some text inside the box.</p>
+    </div>
+    <div class="box" style="background-color:#ccc">
+    <p>Some text inside the box.</p>
+    </div>
+    <div class="box" style="background-color:#ddd">
+    <p>Some text inside the box.</p>
+    </div>
+  </div>
+
+  <br>
+
+  <h2>Navigation Menu</h2>
+  <ul>
+    <li><a href="#" class="active">Home</a></li>
+    <li><a href="#">News</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+
+</body>
+</html>

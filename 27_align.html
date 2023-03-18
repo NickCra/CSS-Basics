@@ -23,7 +23,7 @@
     }
 
     /* Center Image */
-    img {
+    .img1 {
       display: block;
       margin-left: auto;
       margin-right: auto;
@@ -37,6 +37,14 @@
       padding: 10px;
       width: 50%;
       border: 3px solid green;
+    }
+
+    /* Left & Right Float */
+    .right-float {
+      float: right;
+      width: 50%;
+      border: 3px solid green;
+      padding: 10px;
     }
 
   </style>
@@ -60,13 +68,21 @@
 
 <h2>Center Image</h2>
 
-<img src="img/beach_200_133.jpg" alt="A beach" style="width:200px;height:133px;">
+<img class="img1" src="img/beach_200_133.jpg" alt="A beach" style="width:200px;height:133px;">
 
 <br>
 
 <h2>Right Align with Position</h2>
 
 <div class="right-position">
+  <p>Hello World!</p>
+</div>
+
+<br><br><br><br><br>
+
+<h2>Right Align with Float</h2>
+
+<div class="right-float">
   <p>Hello World!</p>
 </div>
 

@@ -47,6 +47,22 @@
       padding: 10px;
     }
 
+    /* Clearfix Hack */
+    div {
+      border: 3px solid green;
+      padding: 5px;
+    }
+
+    .img2 {
+      float: right;
+    }
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
   </style>
 </head>
 <body>
@@ -86,7 +102,25 @@
   <p>Hello World!</p>
 </div>
 
-<br>
+<br><br><br><br><br>
+
+<h2>Without Clearfix</h2>
+
+<div>
+<img src="img/beach_200_133.jpg" alt="A beach" class="img2" style="width:200px;height:133px;">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ut.
+</div>
+
+<br><br><br><br><br>
+
+<h2>With Clearfix</h2>
+
+<div class="clearfix">
+<img src="img/beach_200_133.jpg" alt="A beach" class="img2" style="width:200px;height:133px;">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ut.
+</div>
+
+<br><br>
 
 </body>
 </html>

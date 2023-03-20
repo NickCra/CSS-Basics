@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Combinators</title>
+  <style>
+    /* Descendant Selector */
+    .desc p {
+      background-color: lightblue;
+    }
+
+    /* Child Selector */
+    .child > p {
+      background-color: lightblue;
+    }
+
+    /* Adjacent Sibling Selector */
+    .adj + p {
+      background-color: lightblue;
+    }
+
+    /* General Sibling Selector */
+    .gensib ~ p {
+      background-color: lightblue;;
+    }
+  </style>
+</head>
+<body>
+  <h2>Descendant Selector</h2>
+
+  <div class="desc">
+    <p>Paragraph 1 in the div.</p>
+    <p>Paragraph 2 in the div.</p>
+    <section><p>Paragraph 3 in the div.</p></section>
+  </div>
+
+  <p>Paragraph 4. Not in a div.</p>
+  <p>Paragraph 5. Not in a div.</p>
+
+  <hr>
+
+  <h2>Child Selector</h2>
+
+  <p>The child selector (>) selects all elements that are the children of a specified element.</p>
+
+  <div class="child">
+    <p>Paragraph 1 in the div.</p>
+    <p>Paragraph 2 in the div.</p>
+    <section>
+      <!-- not Child but Descendant -->
+      <p>Paragraph 3 in the div (inside a section element).</p>
+    </section>
+    <p>Paragraph 4 in the div.</p>
+  </div>
+
+  <p>Paragraph 5. Not in a div.</p>
+  <p>Paragraph 6. Not in a div.</p>
+
+  <hr>
+
+  <h2>Adjacent Sibling Selector</h2>
+
+  <div class="adj">
+    <p>Paragraph 1 in the div.</p>
+    <p>Paragraph 2 in the div.</p>
+  </div>
+
+  <p>Paragraph 3. After a div.</p>
+  <p>Paragraph 4. After a div.</p>
+
+  <div>
+    <p>Paragraph 5 in the div.</p>
+    <p>Paragraph 6 in the div.</p>
+  </div>
+
+  <p>Paragraph 7. After a div.</p>
+  <p>Paragraph 8. After a div.</p>
+
+  <hr>
+
+  <h2>General Sibling Selector</h2>
+
+  <p>Paragraph 1.</p>
+
+  <div class="gensib">
+    <p>Paragraph 2.</p>
+  </div>
+
+  <p>Paragraph 3.</p>
+  <code>Some code.</code>
+  <p>Paragraph 4.</p>
+
+  <br>
+
+</body>
+</html>

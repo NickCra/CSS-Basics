@@ -10,18 +10,43 @@
       list-style-type: none;
       margin: 0;
       padding: 0;
+      width: 200px;
+      background-color: #f1f1f1;
+      border: 1px solid #555;
+      position: fixed;
+      overflow: auto;
     }
 
     li a {
       display: block;
-      width: 60px;
-      background-color: lightgrey;
+      padding: 8px 16px;
+      color: #000;
+      text-decoration: none;
+    }
+
+    li {
+      text-align: center;
+      border-bottom: 1px solid black;
+    }
+
+    li:last-child {
+      border: none;
+    }
+
+    li a.active {
+      color: white;
+      background-color: #04AA6D;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #555;
+      color: white;
     }
   </style>
 </head>
 <body>
   <ul>
-    <li><a href="#">Home</a></li>
+    <li><a class="active" href="#">Home</a></li>
     <li><a href="#">News</a></li>
     <li><a href="#">Contact</a></li>
     <li><a href="#">About</a></li>

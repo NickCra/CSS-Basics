@@ -53,6 +53,25 @@
   .third-rgba {
     background-color: rgba(76, 175, 80, 0.6)
   }
+
+  /* Text in Transparent Box */
+
+  .background {
+    background-image: url('img/beach_200_133.jpg')
+  }
+  .transbox {
+    background-color: white;
+    margin: 5px;
+    padding: 15px;
+    border: 3px solid darkgreen;
+    opacity:0.6;
+  }
+
+  .boxtext {
+    color: black;
+    font-weight: bold;
+  }
+
 </style>
 <body>
   <img class="img1" src="img/beach_200_133.jpg" alt="A beach">
@@ -76,5 +95,16 @@
   <div class="second-rgba">Opacity 30%</div>
   <div class="third-rgba">Opacity 60%</div>
   <div>Opacity 1 (default)</div>
+
+  <br>
+
+  <h2>Text in Transparent Box</h2>
+  <div class="background">
+    <div class="transbox">
+      <p class="boxtext">This is some text that is placed in a transparent box.</p>
+    </div>
+  </div>
+
+  <br>
 </body>
 </html>

@@ -21,6 +21,12 @@
     p.fletter::first-letter {
       color: blue;
     }
+
+    /* ::before Pseudo-element */
+    h2::before {
+      content: url('img/beach_200_133.jpg');
+      display: block;
+    }
   </style>
 </head>
 <body>
@@ -28,5 +34,7 @@
   </p>
 
   <p class="fletter">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus exercitationem amet iusto doloremque numquam asperiores in possimus corrupti delectus cumque.</p>
+
+  <h2>Hello World</h2>
 </body>
 </html>

@@ -39,6 +39,20 @@
     opacity: 0.6;
   }
 
+
+/* Transparent Box using RGBA */
+
+  .first-rgba {
+    background-color: rgba(76, 175, 80, 0.1)
+  }
+
+  .second-rgba {
+    background-color: rgba(76, 175, 80, 0.3)
+  }
+
+  .third-rgba {
+    background-color: rgba(76, 175, 80, 0.6)
+  }
 </style>
 <body>
   <img class="img1" src="img/beach_200_133.jpg" alt="A beach">
@@ -47,10 +61,20 @@
 
   <img class="img2" src="img/beach_200_133.jpg" alt="A beach">
 
+  <br>
+
   <h2>Transparent Box using Opacity</h2>
   <div class="first">Opacity 0.1</div>
   <div class="second">Opacity 0.3</div>
   <div class="third">Opacity 0.6</div>
+  <div>Opacity 1 (default)</div>
+
+  <br>
+
+  <h2>Transparent Box using RGBA</h2>
+  <div class="first-rgba">Opacity 10%</div>
+  <div class="second-rgba">Opacity 30%</div>
+  <div class="third-rgba">Opacity 60%</div>
   <div>Opacity 1 (default)</div>
 </body>
 </html>

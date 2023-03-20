@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Align 2</title>
+  <style>
+    /* Center Vertically with Line-height */
+    .line-height {
+      line-height: 200px;
+      height: 200px;
+      border: 3px solid green;
+      text-align: center;
+    }
+
+    .line-height p {
+      line-height: 1.5;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    /* Center Vertically with Position & Transform */
+    .center { 
+    height: 200px;
+    position: relative;
+    border: 3px solid green; 
+  }
+
+  .center p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  /* Center Vertically with Flexbox */
+  .center2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 3px solid green;
+  }
+  </style>
+</head>
+<body>
+  <h2>Center with line-height</h2>
+  
+  <div class="line-height">
+    <p>I am vertically and horizontally centered.</p>
+  </div>
+
+  <br>
+
+  <h2>Center with position and transform</h2>
+
+  <div class="center">
+    <p>I am vertically and horizontally centered.</p>
+  </div>
+
+  <br>
+
+  <h2>Flexbox Centering</h2>
+
+  <div class="center2">
+    <p>I am vertically and horizontally centered.</p>
+  </div>
+
+  <br>
+
+</body>
+</html>

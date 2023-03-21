@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attribute Selectors</title>
+  <style>
+    /* [attribute] Selector */
+    a[target] {
+      background: yellow;
+    }
+
+    /* [attribute="value"] Selector */
+    a[target="_self"] {
+      background: yellow;
+    }
+
+    /* [attribute~="value"] Selector */
+    [title~="pretty"] {
+      border: 6px solid yellow;
+    }
+
+    /* [attribute|="value"] Selector */
+    [class|="top"] {
+      color: blue;
+    }
+
+    /* [attribute^="value"] Selector */
+    [class^="top"] {
+      color: blue;
+    }
+
+    /* [attribute$="value"] Selector*/
+    [class$="test"] {
+      color: red;
+    }
+
+    /* [attribute*="value"] Selector */
+    [class*="ge"] {
+      color: lightgreen;
+    }
+  </style>
+</head>
+<body>
+  <h2>[attribute] Selector</h2>
+
+  <a href="#">This is a link</a>
+  <a href="#" target="_blank">This is a link</a>
+  <a href="#" target="_blank">This is a link</a>
+
+  <h2>[attribute="value"] Selector</h2>
+
+  <a href="#">This is a link</a>
+  <a href="#" target="_self">This is a link</a>
+  <a href="#">This is a link</a>
+
+  <h2>[attribute~="value"] Selector</h2>
+
+  <img src="img/beach_200_133.jpg" title="A beach">
+  <img src="img/beach_200_133.jpg" title="A pretty beach">
+  <img src="img/beach_200_133.jpg" title="A beach">
+
+  <h2>[attribute|="value"] Selector</h2>
+
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, iusto?</p>
+  <p class="top-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, iusto?</p>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, iusto?</p>
+  <h3 class="top-title">Lorem ipsum dolor sit amet.</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sapiente!</p>
+
+  <br>
+
+  <h2>[attribute^="value"] Selector</h2>
+
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, iusto?</p>
+  <p class="top-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, iusto?</p>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, iusto?</p>
+  <h3 class="toptitle">Lorem ipsum dolor sit amet.</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sapiente!</p>
+
+  <br>
+
+  <h2>[attribute$="value"] Selector</h2>
+
+  <p class="firsttest">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, iusto?</p>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, iusto?</p>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, iusto?</p>
+  <h3 class="second-test">Lorem ipsum dolor sit amet.</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sapiente!</p>
+
+  <br>
+
+  <h2>[attribute*="value"] Selector</h2>
+
+  <p class="gender">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, iusto?</p>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, iusto?</p>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure, iusto?</p>
+  <h3 class="regenerate">Lorem ipsum dolor sit amet.</h3>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sapiente!</p>
+</body>
+</html>

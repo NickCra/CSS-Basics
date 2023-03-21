@@ -15,8 +15,14 @@
       background-color: #333;
     }
 
+    /* Border Dividers */
     ul li {
       float: left;
+      border-right: 1px solid #bbb;
+    }
+
+    li:last-child {
+      border-right: none;
     }
 
     li a {
@@ -38,10 +44,11 @@
 </head>
 <body>
    <ul>
-    <li><a href="#">Home</a></li>
+    <li><a class="active" href="#">Home</a></li>
     <li><a href="#">News</a></li>
     <li><a href="#">Contact</a></li>
-    <li style="float:right;"><a class="active" href="#">About</a></li>
+    <!-- Right-Align Link -->
+    <li style="float:right;"><a href="#">About</a></li>
   </ul>
 </body>
 </html>

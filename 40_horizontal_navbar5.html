@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizontal Navigation Bar 5</title>
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: rgb(243, 242, 242);
+      position: -webkit-sticky; /* Safari */
+      position: sticky;
+      top: 0;
+    }
+
+    ul li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      text-decoration: none;
+      padding: 16px 14px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 14px;
+      text-align: center;
+      color: #666;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #ddd;
+    }
+
+    li a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a class="active" href="#">Home</a></li>
+    <li><a href="#">News</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">About</a></li>
+  </ul>
+</body>
+</html>

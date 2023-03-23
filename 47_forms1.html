@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms 1</title>
+  <style>
+    input[type="text"] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0px;
+      box-sizing: border-box;
+      border: 1px solid lightgrey;
+      border-radius: 8px;
+    }
+
+    input[type="text"]:focus {
+      border: 1px solid grey;
+    }
+
+    textarea {
+      width: 100%;
+      height: 150px;
+      padding: 12px 20px;
+      font-size: 16px;
+      box-sizing: border-box;
+      border-radius: 6px;
+      border: 2px solid lightgrey;
+      background-color: rgb(241, 239, 239);
+      resize: none;
+    }
+
+    select {
+      width: 100%;
+      padding: 15px 20px;
+      font-size: 14px;
+      border-radius: 8px;
+      border: none;
+      background-color: rgb(243, 243, 243);
+    }
+  </style>
+</head>
+<body>
+  <h2>Styling Input Fields</h2>
+
+  <form action="#">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="fname">
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lname">
+  </form>
+
+  <h2>Styling Textarea</h2>
+  <textarea name="sometext" id="sometext" cols="30" rows="10">Some text...</textarea>
+
+  <h2>Styling Select Menus</h2>
+
+  <select name="country" id="country">
+    <option value="au">Australia</option>
+    <option value="au">Canada</option>
+    <option value="au">USA</option>
+  </select>
+</body>
+</html>

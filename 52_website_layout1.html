@@ -40,6 +40,19 @@
       background-color: rgb(94, 94, 94);
     }
 
+    /* Content */
+    .column {
+      float: left;
+      width: 33%;
+      padding: 15px;
+    }
+
+    .row::after { /* Clear floats after columns */
+      content: "";
+      display: table;
+      clear: both;
+    }
+
   </style>
 </head>
 <body>
@@ -53,5 +66,19 @@
     <a href="#">Contact</a></li>
   </div>
 
+  <div class="row">
+    <div class="column">
+      <h2>Column</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, architecto hic ullam pariatur qui optio, animi enim doloribus quia, repellendus nostrum! Aut temporibus esse odit maiores est, qui quia consequuntur non error, ea tempora animi beatae reiciendis reprehenderit fuga recusandae laborum minima sit totam. Quam minima nobis rem vel possimus.</p>
+    </div>
+    <div class="column">
+      <h2>Column</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, architecto hic ullam pariatur qui optio, animi enim doloribus quia, repellendus nostrum! Aut temporibus esse odit maiores est, qui quia consequuntur non error, ea tempora animi beatae reiciendis reprehenderit fuga recusandae laborum minima sit totam. Quam minima nobis rem vel possimus.</p>
+    </div>
+    <div class="column">
+      <h2>Column</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, architecto hic ullam pariatur qui optio, animi enim doloribus quia, repellendus nostrum! Aut temporibus esse odit maiores est, qui quia consequuntur non error, ea tempora animi beatae reiciendis reprehenderit fuga recusandae laborum minima sit totam. Quam minima nobis rem vel possimus.</p>
+    </div>
+  </div>
 </body>
 </html>

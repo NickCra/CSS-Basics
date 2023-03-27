@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Math Functions</title>
   <style>
-    div {
+    /* calc() Function */
+    #div1 {
       position: absolute;
       left: 50px;
       width: calc(100% - 100px);
@@ -14,6 +15,14 @@
       background-color: yellow;
       padding: 5px;
     }
+
+    /* max() Function */
+    #div2 {
+      background-color: yellow;
+      height: 100px;
+      width: max(50%, 300px);
+    }
+
   </style>
 </head>
 <body>
@@ -21,6 +30,15 @@
 
   <p>A div that stretches across the window, with a 50px gap between both sides of the div and the edges of the window.</p>
 
-  <div>Some text...</div>
+  <div id="div1">Some text...</div>
+
+  <br><br>
+
+  <h2>The max() Function</h2>
+
+  <p>The width of #div1 is whichever value is largest, 50% or 300px.</p>
+
+  <div id="div2">Some text...</div>
+
 </body>
 </html>

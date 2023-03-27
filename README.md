@@ -1,0 +1,39 @@
+# CSS Basics
+
+Learning some basic CSS: 
+- Selectors
+- Colors
+- Background Color
+- Background Image 
+- Borders
+- Margins
+- Padding
+- Height, Width, Max-width
+- Box Model
+- Outline
+- Text
+- Fonts
+- Icons
+- Links
+- Lists
+- Tables
+- Display & Visibility
+- Max-width
+- Position
+- Z-index
+- Overflow
+- Float
+- Inline-block 
+- Align
+- Combinators
+- Pseudo-classes
+- Pseudo-elements
+- Opacity
+- Navigation Bars
+- Dropdowns
+- Image Gallery
+- Attribute Selectors
+- Forms
+- Counters
+- Website Layout
+- Math Functions
